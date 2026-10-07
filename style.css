@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5ede6;
+    color: #493a35;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    width: 100%;
+    height: 90px;
+    background-color: #fffaf6 !important;
+    border-bottom: 2px solid #d8b7a3;
+    padding: 15px 60px;
+}
+
+.menu-navbar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    height: 55px;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.navbar-brand img {
+    width: 145px;
+    height: auto;
+    max-height: 55px;
+    object-fit: contain;
+    display: block;
+}
+
+.menu-links {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu-links a {
+    color: #493a35 !important;
+    text-decoration: none !important;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu-links a:hover {
+    color: #a95f67 !important;
+}
+
+/* =========================
+   BANNER
+========================= */
+
+.banner {
+    padding: 110px 80px;
+    background: linear-gradient(
+        120deg,
+        #d8b7a3 0%,
+        #efd8d2 48%,
+        #b8c3b2 100%
+    );
+}
+
+.banner-conteudo {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.banner-texto {
+    max-width: 680px;
+}
+
+.banner-texto p:first-child {
+    color: #81464e;
+    font-size: 14px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.banner-texto h1 {
+    color: #493a35;
+    font-size: 62px;
+    line-height: 1.05;
+    margin-bottom: 28px;
+}
+
+.banner-texto p {
+    color: #594b45;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+/* =========================
+   BOTÃO
+========================= */
+
+.banner-texto .btn {
+    background-color: #a95f67 !important;
+    border-color: #a95f67 !important;
+    color: #ffffff !important;
+    padding: 14px 32px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 12px;
+    transition: 0.3s;
+}
+
+.banner-texto .btn:hover {
+    background-color: #81464e !important;
+    border-color: #81464e !important;
+    transform: translateY(-3px);
+}
+
+/* =========================
+   DESTAQUE
+========================= */
+
+.destaque {
+    padding: 90px 80px;
+    background-color: #fffaf6;
+}
+
+.destaque-conteudo {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.destaque-texto p:first-child {
+    color: #687a68;
+    font-size: 14px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.destaque-texto h2 {
+    color: #493a35;
+    font-size: 40px;
+    margin-bottom: 22px;
+}
+
+.destaque-texto p:last-child {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #665750;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.destaque::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #a95f67;
+    margin: 35px auto 0;
+    border-radius: 10px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    background-color: #687a68;
+    color: #ffffff;
+    padding: 60px 70px 20px;
+}
+
+.footer-conteudo {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.footer-conteudo > div {
+    max-width: 300px;
+}
+
+.footer h3 {
+    color: #f7e4df;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.footer h4 {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    color: #f2f3ed;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.footer a {
+    display: block;
+    color: #f2f3ed;
+    text-decoration: none;
+    margin-bottom: 9px;
+    transition: 0.3s;
+}
+
+.footer a:hover {
+    color: #f1c9c9;
+}
+
+.footer-final {
+    border-top: 1px solid #879587;
+    margin-top: 40px;
+    padding-top: 18px;
+    text-align: center;
+}
+
+.footer-final p {
+    margin: 0;
+    font-size: 13px;
+    color: #e4e9e1;
+}
+
+/* ===== Catálogo na página inicial ===== */
+.produtos {
+    padding: 70px 20px;
+    background-color: #fffaf7;
+}
+
+.produtos-titulo {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.produtos-titulo h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #4e403b;
+}
+
+.lista-produtos {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.produto {
+    background-color: #ffffff;
+    border: 2px solid #ead8cf;
+    border-radius: 14px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 8px 22px rgba(90, 70, 60, 0.10);
+    transition: 0.3s;
+}
+
+.produto:hover {
+    transform: translateY(-4px);
+}
+
+.produto img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.produto .btn {
+    margin: 4px;
+}
+
+.preco {
+    color: #a95f67 !important;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+#contador-carrinho {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 19px;
+    height: 19px;
+    margin-left: 5px;
+    background: #d9b1ad;
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+@media (max-width: 992px) {
+    .lista-produtos { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+    .lista-produtos { grid-template-columns: 1fr; }
+}
+
+/* ===== Botão do carrinho na navbar ===== */
+.link-carrinho {
+    background: #657466;
+
+    color: #fff !important;
+
+    padding: 11px 19px;
+
+    border-radius: 30px;
+
+    box-shadow: 0 6px 15px rgba(75, 91, 78, 0.18);
+
+    transition: 0.3s;
+}
+
+.link-carrinho:hover {
+    background: #536257;
+
+    transform: translateY(-2px);
+}
+
+
+/* Texto branco no botão do carrinho */
+.menu-links a.link-carrinho,
+.menu-links a.link-carrinho:hover {
+    color: #ffffff !important;
+}
+
+
+/* Menu no celular */
+@media (max-width: 700px) {
+    .navbar {
+        height: auto !important;
+    }
+
+    .menu-navbar {
+        flex-direction: column;
+        gap: 12px;
+        padding: 14px 15px !important;
+    }
+
+    .menu-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 20px !important;
+    }
+}

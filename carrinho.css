@@ -1,0 +1,378 @@
+/* =====================================================
+   ESSENZA - carrinho.css
+   Estilos da página do carrinho (usado junto com produtos.css)
+   ===================================================== */
+
+/* ---------- Layout: lista à esquerda, resumo à direita ---------- */
+.carrinho-pagina {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.carrinho-layout {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 30px;
+    align-items: start;
+}
+
+.carrinho-itens {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* ---------- Cada produto do carrinho ---------- */
+.item-carrinho {
+    display: grid;
+    grid-template-columns: 90px 1fr auto auto auto;
+    gap: 20px;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #eadbd4;
+    border-radius: 16px;
+    padding: 16px 20px;
+    box-shadow: 0 6px 18px rgba(90, 70, 60, 0.08);
+    transition: 0.3s;
+}
+
+.item-carrinho:hover {
+    box-shadow: 0 10px 26px rgba(90, 70, 60, 0.14);
+}
+
+.item-carrinho img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 12px;
+    background-color: #f3e8e3;
+}
+
+.item-sem-imagem {
+    width: 90px;
+    height: 90px;
+    border-radius: 12px;
+    background-color: #f3e8e3;
+}
+
+.item-info h4 {
+    margin: 0 0 4px;
+    color: #4e403b;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 19px;
+}
+
+.item-preco {
+    margin: 0;
+    color: #766a64;
+    font-size: 14px;
+}
+
+/* Botões − e + */
+.item-qtd {
+    display: flex;
+    align-items: center;
+    border: 1px solid #d8c5bd;
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: #fffaf7;
+}
+
+.item-qtd button {
+    width: 36px;
+    height: 36px;
+    border: none;
+    background: transparent;
+    color: #a96870;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.item-qtd button:hover {
+    background-color: #f3e1de;
+}
+
+.item-qtd span {
+    min-width: 30px;
+    text-align: center;
+    font-weight: 600;
+    color: #4e403b;
+}
+
+.item-subtotal {
+    min-width: 105px;
+    text-align: right;
+    font-weight: 700;
+    color: #a96870;
+}
+
+.item-remover {
+    background: none;
+    border: none;
+    color: #9a8a83;
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.item-remover:hover {
+    color: #b5524f;
+}
+
+/* ---------- Carrinho vazio ---------- */
+.carrinho-vazio {
+    background-color: #fffaf7;
+    border: 1px dashed #d8c5bd;
+    border-radius: 20px;
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.carrinho-vazio h3 {
+    color: #4e403b;
+    font-family: Georgia, "Times New Roman", serif;
+    margin-bottom: 10px;
+}
+
+.carrinho-vazio p {
+    color: #766a64;
+    margin-bottom: 25px;
+}
+
+/* ---------- Resumo do pedido ---------- */
+.carrinho-resumo {
+    position: sticky;
+    top: 20px;
+    background-color: #fffaf7;
+    border: 1px solid #eadbd4;
+    border-radius: 20px;
+    padding: 28px;
+    box-shadow: 0 12px 34px rgba(89, 65, 56, 0.10);
+}
+
+.carrinho-resumo h3 {
+    margin-bottom: 20px;
+    color: #4e403b;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 24px;
+}
+
+.resumo-linha {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    color: #766a64;
+    border-bottom: 1px solid #eadbd4;
+}
+
+.resumo-total {
+    margin-bottom: 22px;
+    border-bottom: none;
+    color: #4e403b;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.resumo-total span:last-child {
+    color: #a96870;
+}
+
+.continuar-comprando {
+    display: block;
+    margin-top: 14px;
+    text-align: center;
+    color: #766a64;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.continuar-comprando:hover {
+    color: #a96870;
+}
+
+/* ---------- Pagamento ---------- */
+.pagamento-box {
+    display: none;
+    max-width: 750px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #fffaf7;
+    border-radius: 25px;
+    border: 1px solid #eadbd4;
+    box-shadow: 0 15px 45px rgba(89, 65, 56, 0.10);
+}
+
+.pagamento-box h2 {
+    color: #4e403b;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.pagamento-subtitulo {
+    color: #766a64;
+    margin-bottom: 30px;
+}
+
+.forma-pagamento {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.forma-pagamento button {
+    flex: 1;
+    min-width: 180px;
+    padding: 16px;
+    border: 1px solid #d8c5bd;
+    border-radius: 15px;
+    background-color: #fff;
+    color: #5d514b;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.forma-pagamento button:hover {
+    border-color: #a96870;
+    color: #a96870;
+    transform: translateY(-2px);
+}
+
+.forma-pagamento button.ativo {
+    background-color: #a96870;
+    border-color: #a96870;
+    color: white;
+}
+
+.opcoes-parcelamento {
+    display: none;
+    margin-top: 20px;
+}
+
+.opcoes-parcelamento label {
+    display: block;
+    color: #5d514b;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.opcoes-parcelamento select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #d8c5bd;
+    border-radius: 12px;
+    background-color: white;
+    color: #5d514b;
+    outline: none;
+}
+
+.pagamento-resumo {
+    margin-top: 30px;
+    padding: 22px;
+    background-color: #dce3d8;
+    border-radius: 18px;
+}
+
+.pagamento-resumo p {
+    margin: 5px 0;
+    color: #566257;
+}
+
+.valor-final {
+    color: #a96870 !important;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.btn-confirmar {
+    width: 100%;
+    margin-top: 25px;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    background-color: #a96870;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-confirmar:hover {
+    background-color: #8f565e;
+    transform: translateY(-2px);
+}
+
+.btn-cancelar {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    border: 1px solid #c8b7ae;
+    border-radius: 30px;
+    background-color: transparent;
+    color: #655751;
+}
+
+/* ---------- Celular e tablet ---------- */
+@media (max-width: 850px) {
+
+    .carrinho-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .carrinho-resumo {
+        position: static;
+    }
+
+    .item-carrinho {
+        grid-template-columns: 70px 1fr auto;
+        gap: 14px;
+    }
+
+    .item-carrinho img,
+    .item-sem-imagem {
+        width: 70px;
+        height: 70px;
+    }
+
+    .item-qtd {
+        grid-column: 2;
+    }
+
+    .item-subtotal {
+        grid-column: 3;
+    }
+
+    .item-remover {
+        grid-column: 1 / -1;
+        justify-self: end;
+    }
+
+    .pagamento-box {
+        margin: 30px 15px;
+        padding: 25px;
+    }
+}
+
+
+/* ---------- Botões no padrão do site ---------- */
+.carrinho-resumo .btn-primary,
+.carrinho-vazio .btn-primary {
+    background-color: #a95f67 !important;
+    border-color: #a95f67 !important;
+    color: #ffffff !important;
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.carrinho-resumo .btn-primary:hover,
+.carrinho-vazio .btn-primary:hover {
+    background-color: #81464e !important;
+    border-color: #81464e !important;
+    transform: translateY(-2px);
+}
