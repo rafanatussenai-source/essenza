@@ -291,9 +291,20 @@ body {
     border-radius: 10px;
     margin-bottom: 20px;
 }
-
 .produto .btn {
-    margin: 4px;
+    background-color: #a95f67 !important;
+    border-color: #a95f67 !important;
+    color: #ffffff !important;
+    padding: 10px 25px;
+    margin-top: 8px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.produto .btn:hover {
+    background-color: #81464e !important;
+    border-color: #81464e !important;
+    transform: translateY(-2px);
 }
 
 .preco {
