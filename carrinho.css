@@ -1,9 +1,3 @@
-/* =====================================================
-   ESSENZA - carrinho.css
-   Estilos da página do carrinho (usado junto com produtos.css)
-   ===================================================== */
-
-/* ---------- Layout: lista à esquerda, resumo à direita ---------- */
 .carrinho-pagina {
     max-width: 1100px;
     margin: 50px auto;
@@ -22,8 +16,6 @@
     flex-direction: column;
     gap: 16px;
 }
-
-/* ---------- Cada produto do carrinho ---------- */
 .item-carrinho {
     display: grid;
     grid-template-columns: 90px 1fr auto auto auto;
@@ -68,8 +60,6 @@
     color: #766a64;
     font-size: 14px;
 }
-
-/* Botões − e + */
 .item-qtd {
     display: flex;
     align-items: center;
@@ -121,8 +111,6 @@
 .item-remover:hover {
     color: #b5524f;
 }
-
-/* ---------- Carrinho vazio ---------- */
 .carrinho-vazio {
     background-color: #fffaf7;
     border: 1px dashed #d8c5bd;
@@ -141,8 +129,6 @@
     color: #766a64;
     margin-bottom: 25px;
 }
-
-/* ---------- Resumo do pedido ---------- */
 .carrinho-resumo {
     position: sticky;
     top: 20px;
@@ -192,8 +178,6 @@
 .continuar-comprando:hover {
     color: #a96870;
 }
-
-/* ---------- Pagamento ---------- */
 .pagamento-box {
     display: none;
     max-width: 750px;
@@ -315,8 +299,6 @@
     background-color: transparent;
     color: #655751;
 }
-
-/* ---------- Celular e tablet ---------- */
 @media (max-width: 850px) {
 
     .carrinho-layout {
@@ -357,8 +339,6 @@
     }
 }
 
-
-/* ---------- Botões no padrão do site ---------- */
 .carrinho-resumo .btn-primary,
 .carrinho-vazio .btn-primary {
     background-color: #a95f67 !important;
