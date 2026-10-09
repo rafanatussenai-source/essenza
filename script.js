@@ -11,9 +11,8 @@ function lerBruto() {
     return null;
 }
 function gravarBruto(texto) {
-    try { localStorage.setItem(CHAVE_CARRINHO, texto); } catch (erro) { /* bloqueado */ }
-    try { window.name = JSON.stringify({ essenzaCarrinho: texto }); } catch (erro) { /* ignora */ }
-}
+    try { localStorage.setItem(CHAVE_CARRINHO, texto); } catch (erro)
+    try { window.name = JSON.stringify({ essenzaCarrinho: texto }); } catch (erro) 
 function lerCarrinho() {
     try {
         const dados = JSON.parse(lerBruto());
