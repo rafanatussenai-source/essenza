@@ -10,10 +10,6 @@ body {
     color: #493a35;
 }
 
-/* =========================
-   NAVBAR
-========================= */
-
 .navbar {
     width: 100%;
     height: 90px;
@@ -67,10 +63,6 @@ body {
     color: #a95f67 !important;
 }
 
-/* =========================
-   CONTATO
-========================= */
-
 .contato {
     padding: 90px 80px;
     background: linear-gradient(
@@ -105,9 +97,7 @@ body {
     font-size: 17px;
 }
 
-/* =========================
-   CONTEÚDO
-========================= */
+
 
 .contato-conteudo {
     max-width: 1100px;
@@ -116,8 +106,6 @@ body {
     justify-content: space-between;
     gap: 50px;
 }
-
-/* INFORMAÇÕES */
 
 .informacoes {
     width: 40%;
@@ -145,10 +133,6 @@ body {
     color: #6b5d57;
     line-height: 1.6;
 }
-
-/* =========================
-   FORMULÁRIO
-========================= */
 
 .formulario {
     width: 55%;
@@ -196,8 +180,6 @@ body {
     resize: none;
 }
 
-/* BOTÃO */
-
 .formulario .btn {
     background-color: #a95f67 !important;
     border-color: #a95f67 !important;
@@ -214,9 +196,6 @@ body {
     transform: translateY(-2px);
 }
 
-/* =========================
-   FOOTER
-========================= */
 
 .footer {
     background-color: #687a68;
@@ -278,8 +257,6 @@ body {
     font-size: 13px;
     color: #e4e9e1;
 }
-
-/* ===== Botão do carrinho na navbar ===== */
 .link-carrinho {
     background: #657466;
 
@@ -322,14 +299,12 @@ body {
 }
 
 
-/* Texto branco no botão do carrinho */
 .menu-links a.link-carrinho,
 .menu-links a.link-carrinho:hover {
     color: #ffffff !important;
 }
 
 
-/* Menu no celular */
 @media (max-width: 700px) {
     .navbar {
         height: auto !important;
