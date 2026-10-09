@@ -10,9 +10,6 @@ body {
     color: #493a35;
 }
 
-/* =========================
-   NAVBAR
-========================= */
 
 .navbar {
     width: 100%;
@@ -67,9 +64,6 @@ body {
     color: #a95f67 !important;
 }
 
-/* =========================
-   BANNER
-========================= */
 
 .banner {
     padding: 110px 80px;
@@ -112,10 +106,6 @@ body {
     margin-bottom: 18px;
 }
 
-/* =========================
-   BOTÃO
-========================= */
-
 .banner-texto .btn {
     background-color: #a95f67 !important;
     border-color: #a95f67 !important;
@@ -134,9 +124,6 @@ body {
     transform: translateY(-3px);
 }
 
-/* =========================
-   DESTAQUE
-========================= */
 
 .destaque {
     padding: 90px 80px;
@@ -180,10 +167,6 @@ body {
     margin: 35px auto 0;
     border-radius: 10px;
 }
-
-/* =========================
-   FOOTER
-========================= */
 
 .footer {
     background-color: #687a68;
@@ -245,8 +228,6 @@ body {
     font-size: 13px;
     color: #e4e9e1;
 }
-
-/* ===== Catálogo na página inicial ===== */
 .produtos {
     padding: 70px 20px;
     background-color: #fffaf7;
@@ -335,7 +316,6 @@ body {
     .lista-produtos { grid-template-columns: 1fr; }
 }
 
-/* ===== Botão do carrinho na navbar ===== */
 .link-carrinho {
     background: #657466;
 
@@ -356,15 +336,12 @@ body {
     transform: translateY(-2px);
 }
 
-
-/* Texto branco no botão do carrinho */
 .menu-links a.link-carrinho,
 .menu-links a.link-carrinho:hover {
     color: #ffffff !important;
 }
 
 
-/* Menu no celular */
 @media (max-width: 700px) {
     .navbar {
         height: auto !important;
