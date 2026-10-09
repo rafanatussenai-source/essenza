@@ -1,18 +1,9 @@
-/* =====================================================
-   ESSENZA - script.js
-   Carrinho de compras, somatória, pagamento e formulário
-   de contato. Este mesmo arquivo é usado em TODAS as páginas.
-   ===================================================== */
-
-
 /* ---------- 1. DADOS DO CARRINHO (localStorage) ---------- */
 
 // Nome da "gaveta" onde o carrinho fica guardado no navegador
 const CHAVE_CARRINHO = "carrinho";
 
 // Lê o texto bruto do carrinho. Tenta o localStorage; se o navegador bloquear
-// (acontece em alguns navegadores ao abrir o arquivo direto do computador),
-// usa o window.name como reserva, que também sobrevive à troca de página.
 function lerBruto() {
     try {
         const valor = localStorage.getItem(CHAVE_CARRINHO);
